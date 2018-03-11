@@ -25,7 +25,7 @@ Top 10 words in text:
 должен-12
 даже-11
 раз-10
-потом-1
+потом-9
 ```
 
 # Project Goals
