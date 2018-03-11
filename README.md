@@ -16,16 +16,16 @@ Running on Windows is similar.
 **Exemple** output :
 ```bash
 Top 10 words in text: 
-на-21
-что-20
+на-25
+что-23
 человек-20
 когда-18
-чтобы-18
+чтобы-17
 кто-15
 должен-12
 даже-11
 раз-10
-потом-9
+потом-8
 ```
 
 # Project Goals
