@@ -11,8 +11,8 @@ def load_data(file_path):
 
 def get_most_frequent_words(text):
     the_processed_text = re.sub('[0-9{0}]'.format(punctuation), '', text.lower())
-    new_list = the_processed_text.split()
-    words = Counter(new_list)
+    words_list = the_processed_text.split()
+    words = Counter(words_list)
     top_words_limit = 10
     return words.most_common(top_words_limit)
 
@@ -22,8 +22,8 @@ if __name__ == '__main__':
         sys.exit('Path to file is not found!')
     file_path = sys.argv[1]
     try:
-        get_text = load_data(file_path)
-        most_frequent_words = get_most_frequent_words(get_text)
+        object_from_text = load_data(file_path)
+        most_frequent_words = get_most_frequent_words(object_from_text)
         print('Top 10 words in text: ')
         for word, amount in most_frequent_words:
             print('{0}-{1}'.format(word, amount))
