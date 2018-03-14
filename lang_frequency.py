@@ -22,8 +22,8 @@ if __name__ == '__main__':
         sys.exit('Path to file is not found!')
     file_path = sys.argv[1]
     try:
-        object_from_text = load_data(file_path)
-        most_frequent_words = get_most_frequent_words(object_from_text)
+        text = load_data(file_path)
+        most_frequent_words = get_most_frequent_words(text)
         print('Top 10 words in text: ')
         for word, amount in most_frequent_words:
             print('{0}-{1}'.format(word, amount))
